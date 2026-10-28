@@ -1,1 +1,134 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  min-height: 293px;
+  padding: 0 50px;
+}
+
+.header__links-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+}
+
+.header__links-list-item {
+  white-space: nowrap;
+}
+
+.header__links-list-item:not(:first-child)::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 12px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+}
+
+.header__logo-image {
+  display: block;
+  width: 100%;
+  height: 105px;
+}
+
+.header__address {
+  justify-self: end;
+  width: 240px;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.header__address a {
+  display: block;
+}
+
+.cover {
+  position: relative;
+  min-height: 757px;
+  padding: 165px 50px 50px;
+  background-image: url("../images/cover.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.cover__title-line {
+  display: block;
+}
+
+.cover__title-line:nth-child(2) {
+  align-self: center;
+}
+
+.cover__title-line:nth-child(3) {
+  align-self: flex-end;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+  color: #fff;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  line-height: 28px;
+  word-spacing: 0.9em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bet-button {
+  width: 256px;
+  min-height: 51px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+}
