@@ -24,7 +24,7 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin-right: 12px;
+  margin-right: 7px;
   border: 1px solid currentColor;
   border-radius: 50%;
   vertical-align: middle;
@@ -60,6 +60,10 @@
 
 .header__address a {
   display: block;
+}
+
+.header__address p {
+  max-width: 236px;
 }
 
 /* Обложка */
@@ -274,6 +278,10 @@
 
 .about__paragraph + .about__paragraph {
   margin-top: 24px;
+}
+
+.about__paragraph:first-child {
+  max-width: 688px;
 }
 
 /* Подвал */
