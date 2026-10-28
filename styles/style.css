@@ -1,3 +1,30 @@
+/* Общие стили */
+
+.header__address,
+.footer__address {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.header__address a,
+.footer__address a {
+  display: block;
+}
+
+.header__link_active,
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.lots__title,
+.about__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 /* Шапка */
 
 .header {
@@ -35,10 +62,6 @@
   line-height: 1;
 }
 
-.header__link_active {
-  text-decoration: none;
-}
-
 .header__logo {
   display: block;
   width: 148px;
@@ -53,13 +76,6 @@
 .header__address {
   justify-self: end;
   width: 240px;
-  font-size: 18px;
-  line-height: 24px;
-  font-style: normal;
-}
-
-.header__address a {
-  display: block;
 }
 
 .header__address p {
@@ -111,8 +127,7 @@
   align-self: flex-end;
 }
 
-.cover__title-line:nth-child(2),
-.cover__title-line:nth-child(3) {
+.cover__title-line:not(:first-child) {
   margin-right: -0.3em;
 }
 
@@ -131,10 +146,10 @@
   line-height: 28px;
   word-spacing: 0.9em;
   text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .bet-button {
+  flex-shrink: 0;
   width: 256px;
   min-height: 51px;
   border: 1px solid #fff;
@@ -154,10 +169,6 @@
 
 .lots__title {
   margin: 0 0 34px 40px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
 }
 
 .lots__card-list {
@@ -265,10 +276,6 @@
 
 .about__title {
   margin-bottom: 110px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
 }
 
 .about__text {
@@ -297,13 +304,6 @@
 
 .footer__address {
   width: 265px;
-  font-size: 18px;
-  line-height: 24px;
-  font-style: normal;
-}
-
-.footer__address a {
-  display: block;
 }
 
 .footer__menu {
@@ -317,10 +317,6 @@
 .footer__menu-link {
   font-size: 18px;
   line-height: 1.2;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
 }
 
 .footer__social-list {
