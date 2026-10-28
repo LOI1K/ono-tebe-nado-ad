@@ -270,3 +270,65 @@
 .about__paragraph + .about__paragraph {
   margin-top: 24px;
 }
+
+/* Подвал */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 164px 1fr;
+  align-items: start;
+  min-height: 180px;
+  margin-top: 180px;
+  padding: 0 50px;
+}
+
+.footer__address {
+  width: 265px;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.footer__address a {
+  display: block;
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.footer__social-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
